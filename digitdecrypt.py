@@ -9,7 +9,7 @@ class Solution:
             arr = [char for char in nums]
             for i in range(9):
                 while arr.len != 1:
-                     for i in range arr.len:
+                     for i in range(arr.len):
                         
                         sum += arr[i]
                         
