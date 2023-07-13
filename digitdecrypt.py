@@ -4,17 +4,25 @@ class Solution:
             #return type: int
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
-            tens = 10 
-            sum = 0
-            arr = [char for char in nums]
-            for i in range(9):
-                while arr.len != 1:
-                     for i in range(arr.len):
+            # tens = 10 
+            # sum = 0
+            # arr = [char for char in nums]
+            # for i in range(9):
+            #     while arr.len != 1:
+            #          for i in range(arr.len):
                         
-                        sum += arr[i]
+            #             sum += arr[i]
                         
-                return sum 
-            pass
+            #     return sum 
+            # pass
+            if num < 0:
+                 raise ValueError("Invalid argument. Please enter a positive integer.")
+            while num >9:
+                 dig_list = [int(i) for i in str(num)]
+                 num = 0
+                 for i in dig_list:
+                      num = num+1
+            return num
  
 def main():
     input1= input()
